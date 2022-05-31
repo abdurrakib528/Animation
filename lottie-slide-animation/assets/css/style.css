@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    overflow-x: hidden;
+    font-family: "Hellix";
+}
+.inner {
+    width: 96%;
+    margin: 0 auto;
+    max-width: 1582px;
+    overflow-x: hidden;
+}
+
+.lottie__slider {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+.lottie__slider__container {
+    overflow: hidden;
+    position: relative;
+}
+
+.lottie__slider > *:not(:first-child) {
+    margin-left: 8%;
+}
+
+.lottie__slider > * {
+    flex: 1;
+}
+
+.slider__json {
+    height: 100vh;
+    margin: auto;
+    width: 80%;
+}
+.slider__json svg {
+    transform: none !important;
+}
+.info__container {
+    margin: 100px 0px 100px;
+    width: 80%;
+    margin-right: 8%;
+}
+.slider__info:first-child {
+    margin-top: 160px;
+}
+.slider__info {
+    margin-top: 100px;
+    transition: all 0.5s ease-in-out;
+}
+
+.slider__info h3 {
+    font-size: 1.5rem;
+    line-height: 1.875rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.slider__info .num {
+    font-size: 3rem;
+    line-height: 3.75rem;
+    font-weight: 600;
+    color: #000000;
+    position: relative;
+}
+
+.slider__info .num:after {
+    content: "";
+    display: block;
+    background-color: #ff1d00;
+    height: 0.375rem;
+    margin: 1.1875rem 0 2rem 0;
+}
+.slider__info p {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+}
+.slider__info a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #000;
+    display: inline-block;
+    margin-top: 1.875rem;
+}
+.learnmore-arrow:hover {
+    color: #ff1d00;
+}
+.slider__info a::after {
+    content: "";
+    width: 2.0625rem;
+    height: 1rem;
+    background: url("https://tensixteenddev.wpengine.com/wp-content/themes/tensixteen/assets/img/global/icon-right-arrow.svg")
+        0 0 no-repeat;
+    float: right;
+    margin: 0.1875rem 0 0 0.875rem;
+}
